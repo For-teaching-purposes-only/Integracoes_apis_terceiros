@@ -1,0 +1,14 @@
+# Código Python do teste API (Login)
+ 
+Código:
+
+import requests
+
+url = "https://serverest.dev/login"
+
+payload = "{\r\n  \"email\": \"paulo@api.com.br\",\r\n  \"password\": \"paulo123\"\r\n}"
+headers = {}
+
+response = requests.request("POST", url, headers=headers, data=payload)
+
+print(response.text)
